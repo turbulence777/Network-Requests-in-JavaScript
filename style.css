@@ -1,0 +1,96 @@
+body {
+    background: #8C52FF; /* Set background color to a shade of purple */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set font family */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100vh; /* Make body height equal to viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3); /* Set semi-transparent white background */
+    max-width: 400px; /* Limit container width */
+    padding: 20px; /* Add padding */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    backdrop-filter: blur(10px); /* Apply backdrop blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Add border */
+    text-align: center; /* Center align text */
+}
+
+h2, label, p {
+    color: #fff; /* Set text color to white */
+    margin: 8px 0; /* Add margin top and bottom */
+}
+
+input {
+    width: calc(100% - 16px); /* Set input width to 100% minus 16px */
+    padding: 8px; /* Add padding */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    border-radius: 10px; /* Add rounded corners */
+    border: 1px solid white; /* Add white border */
+    margin-top: 20px; /* Add margin top */
+}
+
+button {
+    background: #debff4; /* Set button background color */
+    color: white; /* Set text color to white */
+    padding: 10px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 20px; /* Add margin top */
+    width: 100px; /* Set width */
+    font-size: 15px; /* Set font size */
+}
+
+button:hover {
+    background: #8b48d7; /* Change background color on hover */
+}
+
+#temp-div p {
+    font-size: 60px; /* Set font size */
+    margin-top: -30px; /* Adjust margin top */
+}
+
+#weather-info {
+    font-size: 20px; /* Set font size */
+}
+
+#weather-icon {
+    width: 200px; /* Set width */
+    height: 200px; /* Set height */
+    margin: 0 auto 10px; /* Center horizontally and add margin bottom */
+    margin-bottom: 0; /* Override previous margin bottom */
+    display: none; /* Initially hide the weather icon */
+}
+
+#hourly-forecast {
+    margin-top: 50px; /* Add margin top */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.hourly-item {
+    flex: 0 0 auto; /* Allow items to grow and shrink but don't allow them to shrink below their content */
+    width: 80px; /* Set width */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-right: 10px; /* Add margin right */
+    color: white; /* Set text color to white */
+}
+
+.hourly-item img {
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    margin-bottom: 5px; /* Add margin bottom */
+}
+
+#hourly-heading {
+    color: #fff; /* Set text color to white */
+    margin-top: 10px; /* Add margin top */
+}
